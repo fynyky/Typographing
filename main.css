@@ -1,0 +1,50 @@
+.center-horizontal{margin-left:auto;margin-right:auto;left:0px;right:0px;}
+.center-vertical{margin-top:auto;margin-bottom:auto;top:0px;bottom:0px;}
+.center{margin-left:auto;margin-right:auto;left:0px;right:0px;margin-top:auto;margin-bottom:auto;top:0px;bottom:0px;}
+.display-box{display:box;display:-webkit-box;display:-moz-box;}
+*{position:relative;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+html{position:absolute;width:100%;height:100%;}
+body{position:absolute;width:100%;height:100%;margin:0px;}
+div{display:box;display:-webkit-box;display:-moz-box;}
+img{display:box;display:-webkit-box;display:-moz-box;}
+.cancelButton{position:absolute;top:-10px;left:-10px;width:20px;height:20px;border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px;background-color:#DDD;cursor:pointer;}.cancelButton:hover{background-color:#888;}
+.cancelButton .leftCross{position:absolute;margin-left:auto;margin-right:auto;left:0px;right:0px;margin-top:auto;margin-bottom:auto;top:0px;bottom:0px;width:12px;height:2px;background-color:white;transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg);}
+.cancelButton .rightCross{position:absolute;margin-left:auto;margin-right:auto;left:0px;right:0px;margin-top:auto;margin-bottom:auto;top:0px;bottom:0px;width:12px;height:2px;background-color:white;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);}
+.expandingInput{min-width:10px;max-width:100%;padding:7px 10px;box-shadow:inset 1px 1px 4px rgba(0, 0, 0, 0.5);-webkit-box-shadow:inset 1px 1px 4px rgba(0, 0, 0, 0.5);-moz-box-shadow:inset 1px 1px 4px rgba(0, 0, 0, 0.5);background:white;}.expandingInput .inflationText{min-width:inherit;max-width:100%;display:block;height:16px;opacity:0;overflow:hidden;font:inherit;white-space:pre;}
+.expandingInput .actualInput{position:absolute;left:0px;top:0px;min-width:inherit;width:100%;max-width:inherit;height:100%;font:inherit;border-width:0px;padding:inherit;background:none;}
+.expandingInput .cancelButton{opacity:0;}
+.expandingInput.hoverActive:hover .cancelButton{opacity:1;}
+.expandingInput .options{position:absolute;top:100%;left:0px;font:inherit;min-width:100%;z-index:1;box-orient:vertical;-webkit-box-orient:vertical;-moz-box-orient:vertical;}.expandingInput .options .option{font:inherit;padding:7px 10px;cursor:pointer;white-space:pre;background:white;box-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);-webkit-box-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);-moz-box-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);}.expandingInput .options .option.partial{font-weight:bold;}
+.expandingInput .options .option .highlight{background:#E8F0FF;}
+.expandingInput .options .option.selected{background:#E8F0FF;}
+.expandingInput .options .option:hover{background:#E8F0FF;}
+.result{width:100%;margin-bottom:20px;opacity:1;-moz-transition:opacity 0.2s ease-in-out;-webkit-transition:opacity 0.2s ease-in-out;-o-transition:opacity 0.2s ease-in-out;-ms-transition:opacity 0.2s ease-in-out;transition:opacity 0.2s ease-in-out;}.result.hidden{opacity:0;}
+.result.selected{box-shadow:1px 1px 3px rgba(0, 0, 0, 0.5);-webkit-box-shadow:1px 1px 3px rgba(0, 0, 0, 0.5);-moz-box-shadow:1px 1px 3px rgba(0, 0, 0, 0.5);}.result.selected:hover{box-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);-webkit-box-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);-moz-box-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);}
+.result.selected .cancelButton{opacity:1;}
+.result.selected .starButton{opacity:1;}
+.result:hover .cancelButton{opacity:1;}
+.result:hover .starButton{opacity:1;}
+.result:hover .sampleText{box-shadow:1px 1px 3px rgba(0, 0, 0, 0.5);-webkit-box-shadow:1px 1px 3px rgba(0, 0, 0, 0.5);-moz-box-shadow:1px 1px 3px rgba(0, 0, 0, 0.5);}
+.result .sampleText{margin:0px;padding:10px 20px;cursor:pointer;}.result .sampleText:active{box-shadow:0px 0px 2px rgba(0, 0, 0, 0.5);-webkit-box-shadow:0px 0px 2px rgba(0, 0, 0, 0.5);-moz-box-shadow:0px 0px 2px rgba(0, 0, 0, 0.5);}
+.result .cancelButton{opacity:0;}
+.result .starButton{position:absolute;top:-10px;right:-10px;width:20px;height:20px;background-image:url("emptyStar.png");opacity:0;cursor:pointer;}.result .starButton:hover{background-image:url("hoverEmptyStar.png");}
+.result .starButton:active{background-image:url("clickedStar.png");}
+.result .starButton.full{opacity:1;background-image:url("fullStar.png");}.result .starButton.full:hover{background-image:url("hoverFullStar.png");}
+.result .starButton.full:active{background-image:url("clickedStar.png");}
+.resultsList{box-orient:vertical;-webkit-box-orient:vertical;-moz-box-orient:vertical;}
+.shell{width:100%;min-height:100%;padding:40px;}.shell .logoColumn{width:220px;margin-right:40px;box-orient:vertical;-webkit-box-orient:vertical;-moz-box-orient:vertical;}.shell .logoColumn .logo{width:100%;font:12pt "Courier New",sans-serif;font-size:30px;cursor:pointer;}
+.shell .logoColumn .favoritesButton{width:100%;font:12pt "Courier New",sans-serif;font-size:30px;cursor:pointer;font-size:24px;margin-top:40px;}
+.shell .logoColumn .aboutButton{width:100%;font:12pt "Courier New",sans-serif;font-size:30px;cursor:pointer;font-size:24px;margin-top:40px;}
+.shell .resultsColumn{width:420px;margin-right:25px;box-orient:vertical;-webkit-box-orient:vertical;-moz-box-orient:vertical;}.shell .resultsColumn .filters{display:block;margin-bottom:10px;width:100%;}.shell .resultsColumn .filters .filter{float:left;font:12pt "Courier New",sans-serif;min-width:30px;margin-right:12px;margin-bottom:12px;}.shell .resultsColumn .filters .filter.end{min-width:100px;}
+.shell .resultsColumn .results{display:block;}.shell .resultsColumn .results .moreResultsButton{float:left;padding-left:20px;font:12pt "Courier New",sans-serif;cursor:pointer;}.shell .resultsColumn .results .moreResultsButton:hover{font-weight:bold;}
+.shell .resultsColumn .results .moreResultsButton.disabled{display:none;}
+.shell .detailColumn{top:-40px;width:460px;-moz-transition:all 0.2s ease-in-out;-webkit-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;-ms-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;box-orient:vertical;-webkit-box-orient:vertical;-moz-box-orient:vertical;}.shell .detailColumn.disabled{opacity:0;}
+.shell .detailColumn .tags{display:block;width:100%;padding-bottom:10px;margin-bottom:30px;padding-top:15px;}.shell .detailColumn .tags .tag{float:left;margin:5px 15px 5px 0px;font:12pt "Courier New",sans-serif;cursor:pointer;}.shell .detailColumn .tags .tag:hover{font-weight:bold;}
+.shell .detailColumn .tags .family{float:left;margin:5px 15px 5px 0px;font:12pt "Courier New",sans-serif;cursor:pointer;font-size:32px;margin-right:20px;}.shell .detailColumn .tags .family:hover{font-weight:bold;}
+.shell .detailColumn .tags .variant{float:left;margin:5px 15px 5px 0px;font:12pt "Courier New",sans-serif;cursor:pointer;}.shell .detailColumn .tags .variant:hover{font-weight:bold;}
+.shell .detailColumn .tags .useThisFontButton{clear:both;float:left;font:12pt "Courier New",sans-serif;background:white;padding:8px;cursor:pointer;margin-top:10px;margin-bottom:10px;box-shadow:1px 1px 3px rgba(0, 0, 0, 0.5);-webkit-box-shadow:1px 1px 3px rgba(0, 0, 0, 0.5);-moz-box-shadow:1px 1px 3px rgba(0, 0, 0, 0.5);}.shell .detailColumn .tags .useThisFontButton:hover{box-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);-webkit-box-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);-moz-box-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);}
+.shell .detailColumn .tags .useThisFontButton:active{box-shadow:0px 0px 2px rgba(0, 0, 0, 0.5);-webkit-box-shadow:0px 0px 2px rgba(0, 0, 0, 0.5);-moz-box-shadow:0px 0px 2px rgba(0, 0, 0, 0.5);}
+.shell .detailColumn .similarResults{display:block;box-orient:vertical;-webkit-box-orient:vertical;-moz-box-orient:vertical;margin-left:40px;}.shell .detailColumn .similarResults .label{float:left;font:12pt "Courier New",sans-serif;margin-left:-5px;cursor:pointer;margin-bottom:10px;}.shell .detailColumn .similarResults .label:hover{font-weight:bold;}
+.shell .detailColumn .similarResults .resultsList{clear:both;padding-left:18px;border-left:1px solid #999;padding-top:10px;}
+.shell .detailColumn .similarResults .moreResultsButton{float:left;border-left:1px solid #999;padding-left:40px;font:12pt "Courier New",sans-serif;cursor:pointer;}.shell .detailColumn .similarResults .moreResultsButton:hover{font-weight:bold;}
+.shell .detailColumn .similarResults .moreResultsButton.disabled{display:none;}
